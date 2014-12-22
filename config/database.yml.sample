@@ -1,0 +1,21 @@
+
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  host: localhost
+  username: postgres
+  password: ZBM102teq
+  pool: 5
+
+development:
+  <<: *default
+  database: social_development
+
+test:
+  <<: *default
+  database: social_test
+
+production:
+  <<: *default
+  database: social_production
+
