@@ -11,6 +11,8 @@ gem 'sass-rails', '~> 4.0'
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.1.0'
+
+gem 'unicorn'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
@@ -36,7 +38,6 @@ group :development do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
 
-  gem 'rspec-rails', '~> 3.0.0'
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
 
@@ -45,7 +46,7 @@ group :development do
 end
 
 group :test do
-  gem 'rspec-rails', '~> 3.0.0'
+  gem 'rspec-rails'
   gem 'database_cleaner'
   gem 'shoulda-matchers'
   gem 'webmock'

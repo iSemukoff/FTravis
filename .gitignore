@@ -15,3 +15,5 @@ config/database.yml
 public/*
 *.swp
 .idea
+
+db/social.mwb.bak
