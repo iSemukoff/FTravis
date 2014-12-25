@@ -45,6 +45,7 @@ group :development do
   gem 'spring'
 end
 
+
 group :test do
   gem 'rspec-rails'
   gem 'database_cleaner'
@@ -52,4 +53,5 @@ group :test do
   gem 'webmock'
   gem 'factory_girl_rails'
   gem 'faker'
+
 end
