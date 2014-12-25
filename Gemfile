@@ -45,9 +45,11 @@ group :development do
   gem 'spring'
 end
 
+group :development, :test do
+  gem 'rspec-rails'
+end
 
 group :test do
-  gem 'rspec-rails'
   gem 'database_cleaner'
   gem 'shoulda-matchers'
   gem 'webmock'

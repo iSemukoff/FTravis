@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(version: 20141224214617) do
     t.date     "dateins"
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false
-    t.integer  "communication_id"
+    t.string   "communication_id"
   end
 
   create_table "posts", force: true do |t|
