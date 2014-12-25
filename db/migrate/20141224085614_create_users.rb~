@@ -1,0 +1,13 @@
+class CreateUsers < ActiveRecord::Migration
+  def change
+    create_table :users do |t|
+      t.varchar(45) :name
+      t.varchar(45) :email
+      t.varchar(128) :password
+      t.varchar(45) :avatar
+      t.date :dateins
+
+      t.timestamps null: false
+    end
+  end
+end
